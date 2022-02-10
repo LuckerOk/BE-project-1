@@ -15,7 +15,7 @@ const PORT = getPort();
 const dg = debug('server:main');
 
 app.use((req, res, next) => {
-    logger.debug(`${req.method} ${Date.now()} ${JSON.stringify(req.body)}`);
+    logger.debug(`${req.method} ${JSON.stringify(req.body)}`);
 
     next();
 });
