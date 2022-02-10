@@ -24,7 +24,6 @@ app.use('/', routers.auth);
 app.use('/users', routers.users);
 app.use('/classes', routers.classes);
 app.use('/lessons', routers.lessons);
-app.use('/', routers.education);
 
 app.listen(PORT, () => {
     dg(`Server API is up on port ${PORT}`);
